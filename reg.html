@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <style>
+        body { font-family: Arial; width: 400px;  margin: 10px auto; }
+        label { font-size: 16px; }
+        input, select { width: 100%; padding: 7px; margin-top: 3px; margin-bottom: 10px; }
+        button { background: green; color: rgb(255, 255, 255); padding: 7px; border: none; }
+    </style>
+</head>
+<body>
+    <h3>Event Registration</h3>
+    <h3>Event on 30-NOV-2025 ( thursday)</h3>
+    <form id="form">
+    <label>Name</label>
+    <input type="text" name="name">
+    <label>Email</label>
+    <input type="email" name="email">
+    <label>Event</label>
+    <select name="event">
+        <option>Pick one</option>
+        <option>Conference</option>
+        <option>Workshop</option>
+    </select>
+    <button onclick="join()">Register</button>
+</form>
+
+    <script>
+        function join() {
+            alert('You joined!');
+            document.getElementById('form').reset();
+        }
+    </script>
+</body>
+</html>
